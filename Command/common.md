@@ -26,7 +26,6 @@ zip -r archive.zip dir1/
 
 grep -E "02/Dec/2025:(12|13|14|15|16|17):" /var/log/nginx/access.log > /tmp/nginx_12_17.log
 
-
 ##### 生成分析报告
 
 goaccess nginx_12_17.log --log-format=COMBINED -o index.html
