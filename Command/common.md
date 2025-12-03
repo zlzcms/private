@@ -14,6 +14,10 @@ du -sh
 **查看外网ip**
 curl http://api.ip.sb/ip
 
+###### 查看端口情况
+
+nc -zv localhost 80
+
 ###### 指定目录解压
 
 tar -xvf archive.tar.gz -C /target/path
