@@ -33,3 +33,15 @@ grep -E "02/Dec/2025:(12|13|14|15|16|17):" /var/log/nginx/access.log > /tmp/ngin
 ##### 生成分析报告
 
 goaccess nginx_12_17.log --log-format=COMBINED -o index.html
+
+###### 查看防火墙状态
+
+ufw status
+
+允许来自任何IP地址对9100端口的访问（通用设置） 
+
+sudo ufw allow 9100/tcp 
+
+# 或者，为了更安全，可以只允许来自您特定管理IP（172.16.2.1）的访问（推荐） 
+
+sudo ufw allow from 172.16.2.1 to any port 9100
