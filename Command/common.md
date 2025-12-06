@@ -42,6 +42,8 @@ ufw status
 
 sudo ufw allow 9100/tcp 
 
-# 或者，为了更安全，可以只允许来自您特定管理IP（172.16.2.1）的访问（推荐） 
+或者，为了更安全，可以只允许来自您特定管理IP（172.16.2.1）的访问（推荐）
 
 sudo ufw allow from 172.16.2.1 to any port 9100
+
+# 
